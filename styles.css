@@ -1,0 +1,274 @@
+h1 {
+    font-family: Poppins, arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    color: #131D26;
+  }
+  
+  body {
+    font-family: Lato, arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #F2F2F2;
+    color: #131D26;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    background-color: #131D26; 
+    padding: 16px 16px;
+    margin: 0;
+    color: #F2F2F2;
+    border-bottom: solid 10px #082B59; 
+  }
+  
+  .navItem {
+    color: #F2F2F2;
+    text-decoration: none;
+    font-style: normal;
+    padding: 14px 16px;
+    height: 100%;
+  }
+  
+  .navItem:hover {
+    background-color: rgba(0,0,0,0.6);
+    color: #D98555;
+  }
+  
+  .brandName {
+    font-family: Poppins, arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .logoSection {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    justify-content: center;
+  }
+  
+  .logo {
+    border-left: solid 10px #082B59;
+    border-top: solid 10px #082B59;
+    border-bottom: solid 10px #082B59;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 99;
+    background-image:     url(https://assets.codepen.io/6306176/gulp-coffee-beans.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+  
+  .logoHome {
+    border: solid 10px #082B59;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 99;
+    background-image:     url(https://assets.codepen.io/6306176/gulp-coffee-beans.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+  }
+
+  .perfectCup {
+    background-color: #F2F2F2;
+    align-content: center;
+    width: 250px;
+    text-align: center;
+    font-family: Poppins, arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    border-right: solid 10px #082B59;
+    border-top: solid 10px #082B59;
+    border-bottom: solid 10px #082B59;
+    grid-column: 2;
+    grid-row: 1;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+  
+  .aboutUs {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+  }
+  
+  .aboutText {
+    max-width: 400px;
+    min-height: 400px;
+    background: #F2F2F2;
+  }
+
+  .pourOver {
+    align-self: center;
+  }
+
+  
+  .homeText {
+    justify-content: center;
+    margin: 50px;
+    text-align: center;
+  }
+  
+  .justText {
+   text-align: center;
+  }
+  
+  .justText a {
+    color: #131D26;
+    text-decoration: none;
+    font-style: normal;
+  }
+  
+  .contactUs {
+    justify-content: center;
+    margin: 50px;
+    text-align: center;
+  }
+
+  button {
+    background-color: #082B59;
+    border: none;
+    color: #F2F2F2;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  
+  button:hover {
+    background-color: rgba(08,43,89,0.4);
+    color: #131D26;
+  }
+  
+  .productsButton {
+    margin: 20px;
+  }
+  
+  .productGrid {
+    margin: 0px 5%;
+    height: 75vh;
+    justify-items: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "columbian tripleText lightly"
+    "columbianText triple lightlyText"
+  }
+
+  #columbian {
+    grid-area: columbian;
+    background-color: #D98555;
+    border-radius: 15px;
+  }
+
+  #columbianText {
+    grid-area: columbianText;
+  } 
+
+  #triple {
+    grid-area: triple;
+    background-color: #D98555;
+    border-radius: 15px;
+  } 
+
+  #tripleText {
+    grid-area: tripleText;
+  } 
+
+  #lightly {
+    grid-area: lightly;
+    background-color: #D98555;
+    border-radius: 15px;
+  }
+
+  
+  #lightlyText {
+    grid-area: lightlyText;
+  }
+
+  .categoryGridArea {
+    display: grid;
+    align-content: center;
+    text-align: center;
+    max-width: 350px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center; 
+    text-align: center;
+    background-color: #131D26; 
+    padding: 16px 16px;
+    margin: 0;
+    color: #F2F2F2;
+    border-top: solid 10px #082B59;
+  }
+  
+  .footerLinks a {
+    color: #F2F2F2;
+    text-decoration: none;
+    font-style: normal;
+    padding: 10px 10px;
+  }
+
+  @media only screen and (max-width: 992px)  {
+    .aboutUs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* justify-content: center; */
+    }
+    /* .aboutText {
+      width: 100%;
+    }
+    .justText {
+      max-width: 400px;
+    } */
+    .logoHome {
+      transform: scale(75%);
+    }
+    .logoSection {
+      transform: scale(75%);
+    }
+    .productGrid {
+      margin: 0px 5%;
+      height: 75vh;
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr; 
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+      "columbian columbianText"
+      "triple tripleText"
+      "lightly lightlyText"
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .logoHome {
+      transform: scale(50%);
+    }
+    .logoSection {
+      transform: scale(50%);
+    }
+    .perfectCup {
+      transform: 200%;
+    }
+    .navItem {
+      padding: 14px 4px;
+    }
+  }
+
